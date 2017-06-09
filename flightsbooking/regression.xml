@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestSuite">
+	<test name="ExpediaSearchPage" preserve-order="true">
+		<groups>
+			<define name="all">
+				<include name="BMW"></include>
+				<include name="SUV"></include>
+				<include name="Sedan"></include>
+			</define>
+			<run>
+				<include name="all"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.expedia.flightsbooking.TestNG_Grouping">
+			</class>
+		</classes>
+	</test>
+</suite>
